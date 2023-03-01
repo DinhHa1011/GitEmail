@@ -1,0 +1,21 @@
+ssh-keygen -t ed25519 -C "dinhthiha1011@gmail.com"
+	=> tạo khóa ssh cục bộ
+	
+eval `ssh-agent`
+	=> đảm bảo khóa chạy trong nền
+	
+ssh-add ~/.ssh/id_ed25519
+	=> add ssh mở rộng 
+	
+cat ~/.ssh/id_ed25519.pub
+	=> lấy khóa công khai => copy
+	
+vào profile setting => ssh and gpg key => new ssh key => add ssh key vừa lấy bên trên 
+
+git clone git@github.com:DinhHa1011/GitEmail.git
+	=> clone repo 
+	
+git add .
+git commit -m "first"
+git branch -M main
+git push origin main
